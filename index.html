@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Rating</title>
+    <script src="d3.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div id="title">
+            <h1>IMDB Rating</h1>
+            <p>Top ten grossing movie</p>
+        </div>
+
+        <div id="movie-info">
+            <div id="movie-list"></div>
+            <div id="movie-post"></div>
+        </div>
+
+        <form id="choice-submit">
+            <label>U</label>
+            <input type="checkbox" id="checkbox-u">
+
+            <label>15</label>
+            <input type="checkbox" id="checkbox-15">
+
+            <label>12A</label>
+            <input type="checkbox" id="checkbox-12A">
+
+            <label>PG</label>
+            <input type="checkbox" id="checkbox-pg">
+
+            <br>
+            <input type="submit" id="submit" value="Submit">
+        </form>
+
+        <p id="feedback"></p>
+
+        <div id="charts">
+            <div id="content"></div>
+            <div id="legend"></div>
+            <svg id="gross"></svg>
+            <svg id="duration"></svg>
+            <svg id="votes"></svg>
+
+        </div>
+
+    </div>
+
+<script src="app.js"></script>
+</body>
+</html>
